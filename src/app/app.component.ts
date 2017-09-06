@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core'
-import { ZgwnuBonitaModule } from '@zgwnu/ng-bonita'
 
 @Component({
   selector: 'my-app',

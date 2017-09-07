@@ -4,9 +4,7 @@ import { ZgwnuBonitaAuthenticationService, ZgwnuBonitaCredentials } from '@zgwnu
 @Component({
   selector: 'my-app',
   template: `<h1>Hello {{name}}</h1>`,
-  providers: [
-    ZgwnuBonitaAuthenticationService, 
-  ]
+  providers: [ ZgwnuBonitaAuthenticationService ],
 })
 export class AppComponent implements OnInit { 
 

@@ -6,6 +6,7 @@
     System.config({
         packages: {
         // add packages here
+        'ng-bonita/src': { main: './index.js' },
     }
     });
 })(this);

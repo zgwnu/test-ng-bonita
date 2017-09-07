@@ -1,0 +1,3 @@
+[submodule "src/ng-bonita"]
+	path = src/ng-bonita
+	url = https://github.com/zgwnu/ng-bonita.git

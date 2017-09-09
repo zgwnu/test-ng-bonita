@@ -10,13 +10,18 @@ export class AppComponent implements OnInit {
   public name = 'Angular'
 
   constructor(
-//    private authenticationService: ZgwnuBonitaAuthenticationService,
+    private authenticationService: ZgwnuBonitaAuthenticationService,
   )
   {}
 
   ngOnInit() {
-  //  let creds: ZgwnuBonitaCredentials = new ZgwnuBonitaCredentials('onno.haldar', 'zgw')
+    let creds: ZgwnuBonitaCredentials = new ZgwnuBonitaCredentials('configurator', 'zgw')
 
+    this.authenticationService.login(creds)
+      .subscribe(
+        response => console.log(response),
+        error => console.log(error)
+      )
     
   }
 

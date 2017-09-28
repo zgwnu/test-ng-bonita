@@ -13,7 +13,9 @@
     "start": "concurrently \"npm run build:watch:dev\" \"npm run serve:dev\" \"npm run cpx:watch:dev\" ",
 
     "cpx:build": "cpx \"src/**/*.{ts,html,css}\" build",
-    "ngc:dist": "ngc -p tsconfig-build-init.json"
+    "ngc:init": "ngc -p tsconfig-build-init.json",
+    "cfg:test": "cp cfg/dist/main-aot-test.ts dist/build",
+    "ngc:test": "ngc -p tsconfig-build-test.json"
   },
   "author": "Onno Haldar",
   "license": "MIT",

@@ -1,13 +1,14 @@
-import { NgModule }           from '@angular/core'
-import { BrowserModule }      from '@angular/platform-browser'
-import { ZgwnuNgBonitaModule } from '@zgwnu/ng-bonita'
+import { NgModule }                 from '@angular/core'
+import { BrowserModule }            from '@angular/platform-browser'
+
+import { NgBonitaTestModule }  from '../ng-bonita-test'
 
 import { AppComponent }  from './app.component'
 
 @NgModule({
   imports: [ 
-    BrowserModule,
-    ZgwnuNgBonitaModule, 
+    BrowserModule,  
+    NgBonitaTestModule,  
    ],
   declarations: [ AppComponent ],
   providers: [ ],

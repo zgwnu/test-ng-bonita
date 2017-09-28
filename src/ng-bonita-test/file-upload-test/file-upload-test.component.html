@@ -1,0 +1,47 @@
+<h2>File Upload Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+Simple File Upload Test:
+<input type="file" (change)="test_FileUpload_uploadFile($event)">
+<div *ngIf="passedTest_FileUpload_uploadFileRequest">
+    <h3>&#9786; uploadFile</h3>
+    <table style="text-align: left;">
+        <tr><th>fileName</th><th>= {{ inputFile.fileName }}</th></tr>
+        <tr><th>contentType</th><th>= {{ inputFile.contentType }}</th></tr>
+        <tr><th>tempPath</th><th>= {{ inputFile.tempPath }}</th></tr>
+    </table>
+</div>
+<br>
+<br>
+File Upload With Default Progress:
+<input type="file" (change)="test_FileUpload_uploadFile_WithProgressDefault($event)">
+<b>({{ uploadFileProgress_Default.percentDone }}%)</b>
+<div *ngIf="passedTest_FileUpload_uploadFileRequest_WithProgressDefault">
+    <h3>&#9786; uploadFile (with progress default)</h3>
+    <table style="text-align: left;">
+        <tr><th>fileName</th><th>= {{ inputFile_WithProgressDefault.fileName }}</th></tr>
+        <tr><th>contentType</th><th>= {{ inputFile_WithProgressDefault.contentType }}</th></tr>
+        <tr><th>tempPath</th><th>= {{ inputFile_WithProgressDefault.tempPath }}</th></tr>
+    </table>
+</div>
+<br>
+<br>
+File Upload With Customized Progress:
+<input type="file" (change)="test_FileUpload_uploadFile_WithProgressCustom($event)"><br>
+<b>({{ uploadFileProgress_Custom.percentDone }}%)
+    {{ uploadFileProgress_Custom.doneStr }}{{ uploadFileProgress_Custom.toDoStr }}</b>
+<div *ngIf="passedTest_FileUpload_uploadFileRequest_WithProgressCustom">
+    <h3>&#9786; uploadFile (with progress customized)</h3>
+    <table style="text-align: left;">
+        <tr><th>fileName</th><th>= {{ inputFile_WithProgressCustom.fileName }}</th></tr>
+        <tr><th>contentType</th><th>= {{ inputFile_WithProgressCustom.contentType }}</th></tr>
+        <tr><th>tempPath</th><th>= {{ inputFile_WithProgressCustom.tempPath }}</th></tr>
+    </table>
+</div>

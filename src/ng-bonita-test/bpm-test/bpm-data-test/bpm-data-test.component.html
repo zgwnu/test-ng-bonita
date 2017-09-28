@@ -1,0 +1,19 @@
+<h2>BPM Data Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmData_searchCaseVariables">
+        <h3>&#9786; searchCaseVariables</h3>
+        <i>{{ searchCaseVariables | json }}</i>     
+</div>
+
+<div *ngIf="passedTest_BpmData_getCaseVariable">
+    <h3>&#9786; getCaseVariable</h3>
+    <i>{{ getCaseVariable | json }}</i>
+</div>

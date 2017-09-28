@@ -1,0 +1,47 @@
+<h2>BPM User Task Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmUserTask_getUserTask">
+    <h3>&#9786; getUserTask</h3>
+    <table style="text-align: left;">
+        <tr><th>id</th><th>= {{ userTask.id }}</th></tr>
+        <tr><th>last_update_date</th><th>= {{ userTask.last_update_date }}</th></tr>
+        <tr><th>state</th><th>= {{ userTask.state }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmUserTask_getUserTaskContext">
+    <h3>&#9786; getUserTaskContext</h3>
+    <i>{{ userTaskContext | json }}</i>
+</div>
+
+<div *ngIf="passedTest_BpmUserTask_assignUserTask_ToSpecificUser">
+    <h3>&#9786; assignUserTask(<i>ToSpecificUser</i>)</h3>
+    <table style="text-align: left;">
+      <tr><th>status</th><th>= {{ assignUserTask_ToSpecificUser_Response.status }}</th></tr>
+      <tr><th>statusText</th><th>= {{ assignUserTask_ToSpecificUser_Response.statusText }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmUserTask_assignUserTask_ToCurrentUser">
+    <h3>&#9786; assignUserTask(<i>ToCurrentUser</i>)</h3>
+    <table style="text-align: left;">
+      <tr><th>status</th><th>= {{ assignUserTask_ToCurrentUser_Response.status }}</th></tr>
+      <tr><th>statusText</th><th>= {{ assignUserTask_ToCurrentUser_Response.statusText }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmUserTask_executeUserTask">
+    <h3>&#9786; executeUserTask(<i>&nbsp; {{ this.userTask.id }},&nbsp; {{ this.userTaskContract | json }}</i>&nbsp; )</h3>
+    <table style="text-align: left;">
+      <tr><th>status</th><th>= {{ assignUserTask_ToCurrentUser_Response.status }}</th></tr>
+      <tr><th>statusText</th><th>= {{ assignUserTask_ToCurrentUser_Response.statusText }}</th></tr>
+    </table>
+</div>

@@ -1,0 +1,49 @@
+<h2>BDM Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BusinessData_queryBusinessData">
+    <h3>&#9786; queryBusinessData</h3>
+    <table style="text-align: left;" *ngFor="let item of ng2BonitaMasterList.items; let i = index;" >
+        <tr><th>persistenceId</th><th>= {{ item.persistenceId }}</th></tr>
+        <tr><th>masterKey</th><th>= {{ item.masterKey }}</th></tr>
+        <tr><th>masterDate</th><th>= {{ item.masterDate | date }}</th></tr>
+        <tr>
+            <table style="text-align: left;" *ngFor="let detail of item.details; let j = index;" >
+                    <tr><th>&nbsp; detailKey</th><th>= {{ detail.detailKey }}</th></tr>
+                    <tr><th>&nbsp; &nbsp; xref.xrefKey</th><th>= {{ detail.xref.xrefKey }}</th></tr>
+            </table>
+        </tr>
+        <tr><th>masterBoolean</th><th>= {{ item.masterBoolean }}</th></tr>
+        <tr><th>masterDouble</th><th>= {{ item.masterDouble }}</th></tr>
+        <tr><th>masterFloat</th><th>= {{ item.masterFloat }}</th></tr>
+        <tr><th>masterLong</th><th>= {{ item.masterLong }}</th></tr>
+        <tr><th>masterText</th><th>= {{ item.masterText }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BusinessData_getBusinessData">
+    <h3>&#9786; getBusinessData</h3>
+    <table style="text-align: left;" >
+        <tr><th>persistenceId</th><th>= {{ ng2BonitaMaster.persistenceId }}</th></tr>
+        <tr><th>masterKey</th><th>= {{ ng2BonitaMaster.masterKey }}</th></tr>
+        <tr><th>masterDate</th><th>= {{ ng2BonitaMaster.masterDate | date }}</th></tr>
+        <tr>
+            <table style="text-align: left;" *ngFor="let detail of ng2BonitaMaster.details; let j = index;" >
+                    <tr><th>&nbsp; detailKey</th><th>= {{ detail.detailKey }}</th></tr>
+                    <tr><th>&nbsp; &nbsp; xref.xrefKey</th><th>= {{ detail.xref.xrefKey }}</th></tr>
+            </table>
+        </tr>
+        <tr><th>masterBoolean</th><th>= {{ ng2BonitaMaster.masterBoolean }}</th></tr>
+        <tr><th>masterDouble</th><th>= {{ ng2BonitaMaster.masterDouble }}</th></tr>
+        <tr><th>masterFloat</th><th>= {{ ng2BonitaMaster.masterFloat }}</th></tr>
+        <tr><th>masterLong</th><th>= {{ ng2BonitaMaster.masterLong }}</th></tr>
+        <tr><th>masterText</th><th>= {{ ng2BonitaMaster.masterText }}</th></tr>
+    </table>
+</div>

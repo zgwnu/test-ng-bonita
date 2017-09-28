@@ -1,0 +1,32 @@
+<h2>BPM Process Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmProcess_searchProcessDefinitions">
+  <h3>&#9786; searchProcessDefinition</h3>
+  <table style="text-align: left;">
+    <tr><th>name</th><th>= {{ processDefinition.name }}</th></tr>
+    <tr><th>version</th><th>= {{ processDefinition.version }}</th></tr>
+    <tr><th>deploymentDate</th><th>= {{ processDefinition.deploymentDate }}</th></tr>
+  </table>
+</div>
+
+<div *ngIf="passedTest_BpmProcess_getProcessDefinition">
+    <h3>&#9786; getProcessDefinition</h3>
+    <table style="text-align: left;">
+      <tr><th>id</th><th>= {{ processDefinition.id }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmProcess_createCase">
+    <h3>&#9786; createCase</h3>
+    <table style="text-align: left;">
+      <tr><th>caseId</th><th>= {{ createCaseSuccessResponse.caseId }}</th></tr>
+    </table>
+</div>

@@ -1,0 +1,26 @@
+<h2>Authentication Test</h2>
+
+<div *ngIf="errorResponse">
+        <h3>&#9785; errorResponse</h3>
+        <table style="text-align: left;">
+        <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+        <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+        </table>
+</div>
+
+<div *ngIf="passedTest_AuthenticationService_login">
+  <h3>&#9786; Response</h3>
+  <table style="text-align: left;">
+    <tr><th>status</th><th>= {{ response.status }}</th></tr>
+    <tr><th>statusText</th><th>= {{ response.statusText }}</th></tr>
+  </table>
+</div>
+
+<div *ngIf="passedTest_SessionService_getSession">
+  <h3>&#9786; Session</h3>
+  <table style="text-align: left;">
+    <tr><th>user_id</th><th>= {{ session.user_id }}</th></tr>
+    <tr><th>user_name</th><th>= {{ session.user_name }}</th></tr>
+    <tr><th>token</th><th>= {{ session.token }}</th></tr>
+  </table>
+</div>

@@ -1,0 +1,26 @@
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<h1>ZGW NU Ng Bonita Test</h1>
+<b>testCaseService: </b><i>{{ testCaseService | json }}</i>
+<hr><hr>
+<authentication-test></authentication-test>
+<hr><hr>
+<file-upload-test *ngIf="testCaseService.isAuthorized"></file-upload-test>
+<hr><hr>
+<bpm-process-test *ngIf="testCaseService.isAuthorized"></bpm-process-test>
+<hr><hr>
+<bpm-case-test *ngIf="testCaseService.caseId"></bpm-case-test>
+<hr><hr>
+<bpm-activity-test *ngIf="testCaseService.caseId"></bpm-activity-test>
+<hr><hr>
+<bpm-human-task-test *ngIf="testCaseService.caseId"></bpm-human-task-test>
+<hr><hr>
+<bpm-task-test *ngIf="testCaseService.caseId"></bpm-task-test>
+<hr><hr>
+<bpm-user-task-test *ngIf="testCaseService.taskId"></bpm-user-task-test>
+<hr><hr>
+<bpm-data-test *ngIf="testCaseService.caseId"></bpm-data-test>
+<hr><hr>
+<bpm-document-test *ngIf="testCaseService.uploadedDocFile"></bpm-document-test>
+<hr><hr>
+<bdm-test *ngIf="testCaseService.taskId"></bdm-test>
+<hr><hr>

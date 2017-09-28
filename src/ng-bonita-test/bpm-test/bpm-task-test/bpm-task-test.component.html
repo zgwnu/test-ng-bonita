@@ -1,0 +1,26 @@
+<h2>BPM Task Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmTask_searchTasks">
+        <h3>&#9786; searchTasks</h3>
+        <table style="text-align: left;">
+            <tr><th>id</th><th>= {{ task.id }}</th></tr>
+            <tr><th>name</th><th>= {{ task.name }}</th></tr>
+        </table>        
+</div>
+
+<div *ngIf="passedTest_BpmTask_getTask">
+    <h3>&#9786; getTask</h3>
+    <table style="text-align: left;">
+        <tr><th>id</th><th>= {{ task.id }}</th></tr>
+        <tr><th>last_update_date</th><th>= {{ task.last_update_date }}</th></tr>
+        <tr><th>state</th><th>= {{ task.state }}</th></tr>
+    </table>
+</div>

@@ -1,0 +1,50 @@
+<h2>BPM Document Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmDocument_createDocumentFromUrl">
+    <h3>&#9786; createDocumentFromUrl</h3>
+    <table style="text-align: left;">
+        <tr><th>id</th><th>= {{ documentCreatedFromUrl.id }}</th></tr>
+        <tr><th>creationDate</th><th>= {{ documentCreatedFromUrl.creationDate }}</th></tr>
+        <tr><th>author</th><th>= {{ documentCreatedFromUrl.author }}</th></tr>
+        <tr><th>index</th><th>= {{ documentCreatedFromUrl.index }}</th></tr>
+        <tr><th>contentMimetype</th><th>= {{ documentCreatedFromUrl.contentMimetype }}</th></tr>
+        <tr><th>caseId</th><th>= {{ documentCreatedFromUrl.caseId }}</th></tr>
+        <tr><th>contentStorageId</th><th>= {{ documentCreatedFromUrl.contentStorageId }}</th></tr>
+        <tr><th>isInternal</th><th>= {{ documentCreatedFromUrl.isInternal }}</th></tr>
+        <tr><th>description</th><th>= {{ documentCreatedFromUrl.description }}</th></tr>
+        <tr><th>name</th><th>= {{ documentCreatedFromUrl.name }}</th></tr>
+        <tr><th>fileName</th><th>= {{ documentCreatedFromUrl.fileName }}</th></tr>
+        <tr><th>submittedBy</th><th>= {{ documentCreatedFromUrl.submittedBy }}</th></tr>
+        <tr><th>url</th><th>= {{ documentCreatedFromUrl.url }}</th></tr>
+        <tr><th>version</th><th>= {{ documentCreatedFromUrl.version }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmDocument_createDocumentFromTempFile">
+        <h3>&#9786; createDocumentFromTempFile</h3>
+        <table style="text-align: left;">
+            <tr><th>id</th><th>= {{ documentCreatedFromTempFile.id }}</th></tr>
+            <tr><th>creationDate</th><th>= {{ documentCreatedFromTempFile.creationDate }}</th></tr>
+            <tr><th>author</th><th>= {{ documentCreatedFromTempFile.author }}</th></tr>
+            <tr><th>index</th><th>= {{ documentCreatedFromTempFile.index }}</th></tr>
+            <tr><th>contentMimetype</th><th>= {{ documentCreatedFromTempFile.contentMimetype }}</th></tr>
+            <tr><th>caseId</th><th>= {{ documentCreatedFromTempFile.caseId }}</th></tr>
+            <tr><th>contentStorageId</th><th>= {{ documentCreatedFromTempFile.contentStorageId }}</th></tr>
+            <tr><th>isInternal</th><th>= {{ documentCreatedFromTempFile.isInternal }}</th></tr>
+            <tr><th>description</th><th>= {{ documentCreatedFromTempFile.description }}</th></tr>
+            <tr><th>name</th><th>= {{ documentCreatedFromTempFile.name }}</th></tr>
+            <tr><th>fileName</th><th>= {{ documentCreatedFromTempFile.fileName }}</th></tr>
+            <tr><th>submittedBy</th><th>= {{ documentCreatedFromTempFile.submittedBy }}</th></tr>
+            <tr><th>url</th><th>= {{ documentCreatedFromTempFile.url }}</th></tr>
+            <tr><th>version</th><th>= {{ documentCreatedFromTempFile.version }}</th></tr>
+        </table>
+    </div>
+    

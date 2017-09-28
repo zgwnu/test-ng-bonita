@@ -1,0 +1,31 @@
+<h2>BPM Case Test</h2>
+
+<div *ngIf="errorResponse">
+    <h3>&#9785; errorResponse</h3>
+    <table style="text-align: left;">
+    <tr><th>exception</th><th>= {{ errorResponse.exception }}</th></tr>
+    <tr><th>message</th><th>= {{ errorResponse.message }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmCase_getCase">
+    <h3>&#9786; getCase</h3>
+    <table style="text-align: left;">
+        <tr><th>id</th><th>= {{ caseGet.id }}</th></tr>
+        <tr><th>start</th><th>= {{ caseGet.start }}</th></tr>
+        <tr><th>state</th><th>= {{ caseGet.state }}</th></tr>
+    </table>
+</div>
+
+<div *ngIf="passedTest_BpmCase_searchCase">
+        <h3>&#9786; searchCase</h3>
+        <table style="text-align: left;">
+            <tr><th>id</th><th>= {{ caseSearch.id }}</th></tr>
+            <tr><th>started_by</th><th>= {{ caseSearch.started_by }}</th></tr>
+        </table>        
+</div>
+
+<div *ngIf="passedTest_BpmCase_getCaseContext">
+        <h3>&#9786; getCaseContext</h3>
+        <i>{{ caseContext | json }}</i>   
+</div>

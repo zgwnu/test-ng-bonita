@@ -9,7 +9,11 @@ Test App for ZGW NU Angular Bonita BPM Rest Api Services Package. Also example h
 ## Bonita Workspace Install
 * Menu: _Diagram > Import >_
 * Choose _../test/ng-bonita/cfg/bonita/test_workspace.bos_
-* Click on _Open_ button
+* Press on _Open_ button
+* Open a Diagram Import a Diagram
+Recently Modified
+__ZgwnuNgBonitaTest (0.0.2)__
+* Press on _Run_ button
 
 # Start
 __Works in Safari with Development mode Cross-Origin off__  

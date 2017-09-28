@@ -3,7 +3,7 @@ import { NgModule }     from '@angular/core'
 import { CommonModule }   from '@angular/common'
 
 // ZGWNU Ng Bonita Module Imports
-import { ZgwnuNgBonitaModule } from '../ng-bonita'
+import { ZgwnuNgBonitaModule } from '@zgwnu/ng-bonita'
 
 // APP Imports
 import { TestCaseService } from './test/test-case.service'

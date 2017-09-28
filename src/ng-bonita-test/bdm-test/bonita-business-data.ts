@@ -1,4 +1,4 @@
-import { ZgwnuBonitaBusinessDataObjectInterface, ZgwnuBonitaIsDateTypeInterface } from '../../ng-bonita'
+import { ZgwnuBonitaBusinessDataObjectInterface, ZgwnuBonitaIsDateTypeInterface } from '@zgwnu/ng-bonita'
 
 export interface Ng2BonitaXrefInterface extends ZgwnuBonitaBusinessDataObjectInterface {
     xrefKey: string

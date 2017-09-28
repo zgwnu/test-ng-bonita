@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core'
 // ZGWNU Ng Bonita Module Imports
 import { ZgwnuBonitaBpmUserTaskService, ZgwnuBonitaErrorResponse, ZgwnuBonitaResponse, 
     ZgwnuBonitaSearchParms, ZgwnuBonitaUserTask, ZgwnuBonitaConfigService, 
-    ZgwnuBonitaBusinessDataContext } from '../../../ng-bonita'  
+    ZgwnuBonitaBusinessDataContext } from '@zgwnu/ng-bonita'  
 
 // APP Imports
 import { TestCaseService } from '../../test/test-case.service'

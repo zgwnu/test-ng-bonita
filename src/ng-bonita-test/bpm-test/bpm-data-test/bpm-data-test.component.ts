@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core'
 
 // ZGWNU Ng Bonita Module Imports
 import { ZgwnuBonitaBpmDataService, ZgwnuBonitaErrorResponse, ZgwnuBonitaResponse, 
-    ZgwnuBonitaSearchParms, ZgwnuBonitaCaseVariable } from '../../../ng-bonita'  
+    ZgwnuBonitaSearchParms, ZgwnuBonitaCaseVariable } from '@zgwnu/ng-bonita'  
 
 // APP Imports
 import { TestCaseService } from '../../test/test-case.service'

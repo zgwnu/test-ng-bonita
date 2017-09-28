@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core'
 
 // ZGWNU Ng Bonita Module Imports
-import { ZgwnuBonitaBusinessDataContext, ZgwnuBonitaContractInputFile } from '../../ng-bonita'
+import { ZgwnuBonitaBusinessDataContext, ZgwnuBonitaContractInputFile } from '@zgwnu/ng-bonita'
 
 @Injectable()
 export class TestCaseService {

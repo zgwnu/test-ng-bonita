@@ -1,5 +1,5 @@
 // ZGWNU Ng Bonita Module Imports
-import { ZgwnuBonitaProgressInterface } from '../../ng-bonita'
+import { ZgwnuBonitaProgressInterface } from '@zgwnu/ng-bonita'
 
 export class FileUploadTestProgress implements ZgwnuBonitaProgressInterface {
     loaded: number

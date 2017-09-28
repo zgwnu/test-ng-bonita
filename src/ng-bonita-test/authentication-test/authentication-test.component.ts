@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core'
 // ZGWNU Ng Bonita Module Imports
 import { ZgwnuBonitaConfigService, ZgwnuBonitaAuthenticationService, ZgwnuBonitaSessionService, 
     ZgwnuBonitaCredentials, ZgwnuBonitaSession, ZgwnuBonitaResponse, ZgwnuBonitaErrorResponse 
-  } from '../../ng-bonita'  
+  } from '@zgwnu/ng-bonita'  
 
 // APP Imports
 import { TestCaseService } from '../test/test-case.service'

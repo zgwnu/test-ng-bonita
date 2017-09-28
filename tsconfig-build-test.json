@@ -16,7 +16,7 @@
   
     "files": [
       "build/app/app.module.ts",
-      "dist/build/main-aot-test.ts"
+      "aot/build/main-aot-test.ts"
     ],
   
     "angularCompilerOptions": {

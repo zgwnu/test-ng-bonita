@@ -10,7 +10,10 @@
     "build:watch:dev": "tsc -w -p src/",
     "serve:dev": "lite-server -c=bs-config.json",
     "prestart": "npm run build:dev && npm run cfg:dev && npm run cpx:dev",
-    "start": "concurrently \"npm run build:watch:dev\" \"npm run serve:dev\" \"npm run cpx:watch:dev\" "
+    "start": "concurrently \"npm run build:watch:dev\" \"npm run serve:dev\" \"npm run cpx:watch:dev\" ",
+
+    "cpx:build": "cpx \"src/**/*.{ts,html,css}\" build",
+    "ngc:dist": "ngc -p tsconfig-build-init.json"
   },
   "author": "Onno Haldar",
   "license": "MIT",

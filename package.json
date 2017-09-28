@@ -15,7 +15,9 @@
     "cpx:build": "cpx \"src/**/*.{ts,html,css}\" build",
     "ngc:init": "ngc -p tsconfig-build-init.json",
     "cfg:test": "cp cfg/dist/main-aot-test.ts dist/build",
-    "ngc:test": "ngc -p tsconfig-build-test.json"
+    "ngc:test": "ngc -p tsconfig-build-test.json",
+    "build:init": "npm run cpx:build && npm run ngc:init",
+    "build:test": "npm run build:init && npm run cfg:test && npm run ngc:test"
   },
   "author": "Onno Haldar",
   "license": "MIT",

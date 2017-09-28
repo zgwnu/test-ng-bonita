@@ -30,7 +30,7 @@ export class AuthenticationTestComponent implements OnInit {
     private configService: ZgwnuBonitaConfigService,
     private sessionService: ZgwnuBonitaSessionService,  
     private authenticationService: ZgwnuBonitaAuthenticationService,  
-    private testCaseService: TestCaseService,  
+    public testCaseService: TestCaseService,  
   )
   {}
 

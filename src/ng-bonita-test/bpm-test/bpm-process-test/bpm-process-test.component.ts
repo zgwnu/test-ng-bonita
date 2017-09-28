@@ -51,7 +51,7 @@ export class BpmProcessTestComponent implements OnInit {
 
   constructor(
     private bpmProcessService: ZgwnuBonitaBpmProcessService, 
-    private testCaseService: TestCaseService,  
+    public testCaseService: TestCaseService,  
   )
   {
   }

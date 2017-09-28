@@ -44,7 +44,7 @@ export class BpmUserTaskTestComponent implements OnInit {
     constructor(
         private configService: ZgwnuBonitaConfigService,  
         private bpmUserTaskService: ZgwnuBonitaBpmUserTaskService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }

@@ -32,7 +32,7 @@ export class BpmCaseTestComponent implements OnInit {
 
     constructor(
         private bpmCaseService: ZgwnuBonitaBpmCaseService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }

@@ -30,7 +30,7 @@ export class BpmDataTestComponent implements OnInit {
 
     constructor(
         private bpmDataService: ZgwnuBonitaBpmDataService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }

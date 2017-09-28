@@ -42,7 +42,7 @@ export class BpmDocumentTestComponent implements OnInit {
 
     constructor(
         private bpmDocumentService: ZgwnuBonitaBpmDocumentService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }

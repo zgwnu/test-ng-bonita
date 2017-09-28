@@ -17,7 +17,7 @@ import { TestCaseService } from './test-case.service'
 export class TestComponent implements OnInit {
 
   constructor(
-    private testCaseService: TestCaseService
+    public testCaseService: TestCaseService
   )
   {
 

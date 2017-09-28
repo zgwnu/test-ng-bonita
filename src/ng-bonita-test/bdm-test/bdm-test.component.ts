@@ -38,7 +38,7 @@ export class BdmTestComponent implements OnInit {
 
     constructor(
         private businessDataService: ZgwnuBonitaBusinessDataService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }

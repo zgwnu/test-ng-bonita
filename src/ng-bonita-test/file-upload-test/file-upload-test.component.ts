@@ -36,7 +36,7 @@ export class FileUploadTestComponent implements OnInit {
 
     constructor(
         private fileUploadService: ZgwnuBonitaFileUploadService, 
-        private testCaseService: TestCaseService,  
+        public testCaseService: TestCaseService,  
     )
     {
     }
@@ -45,7 +45,7 @@ export class FileUploadTestComponent implements OnInit {
 
     }
 
-    private test_FileUpload_uploadFile(event: any) {
+    test_FileUpload_uploadFile(event: any) {
         let uploadFiles: FileList = event.target.files
         let uploadFile: File = uploadFiles[0]
 
@@ -62,7 +62,7 @@ export class FileUploadTestComponent implements OnInit {
             )
     }
 
-    private test_FileUpload_uploadFile_WithProgressDefault(event: any) {
+    test_FileUpload_uploadFile_WithProgressDefault(event: any) {
         let uploadFiles: FileList = event.target.files
         let uploadFile: File = uploadFiles[0]
 
@@ -79,7 +79,7 @@ export class FileUploadTestComponent implements OnInit {
             )
     }
 
-    private test_FileUpload_uploadFile_WithProgressCustom(event: any) {
+    test_FileUpload_uploadFile_WithProgressCustom(event: any) {
         let uploadFiles: FileList = event.target.files
         let uploadFile: File = uploadFiles[0]
 

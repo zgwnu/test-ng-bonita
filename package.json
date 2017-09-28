@@ -18,7 +18,7 @@
     "cfg:test": "cp cfg/dist/main-aot-test.ts aot/build",
     "ngc:test": "ngc -p tsconfig-build-test.json",
     "package:test": "rollup -c rollup-config-test.js",
-    "build:test": "npm run build:init && npm run cfg:test && npm run ngc:test"
+    "build:test": "npm run build:init && npm run cfg:test && npm run ngc:test && npm run package:test"
   },
   "author": "Onno Haldar",
   "license": "MIT",

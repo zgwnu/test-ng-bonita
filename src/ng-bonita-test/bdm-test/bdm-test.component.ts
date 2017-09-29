@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core'
 
 // ZGWNU Ng Bonita Module Imports
 import { ZgwnuBonitaBusinessDataService, ZgwnuBonitaErrorResponse, ZgwnuBonitaResponse, 
-    ZgwnuBonitaBusinessDataQueryParms, ZgwnuBonitaBusinessDataListInterface } from '@zgwnu/ng-bonita'  
+    ZgwnuBonitaBusinessDataQueryParms } from '@zgwnu/ng-bonita'  
 
 // APP Imports
 import { TestCaseService } from '../test/test-case.service'
-import { Ng2BonitaMasterInterface, ZgwnuBonitaIsDateType } from './bonita-business-data'
+import { Ng2BonitaMasterInterface, Ng2BonitaMasterListInterface, ZgwnuBonitaIsDateType 
+    } from './bonita-business-data'
 
 @Component({
     moduleId: module.id,
@@ -27,7 +28,7 @@ export class BdmTestComponent implements OnInit {
     queryName = 'findByMasterText'
     parameterValue: string = 'masterText=This is a test Text for zgwnu-ng2-bonita-testapp'
     dataQueryParms: ZgwnuBonitaBusinessDataQueryParms = new ZgwnuBonitaBusinessDataQueryParms(this.queryName, 0, 1, [this.parameterValue])
-    ng2BonitaMasterList: ZgwnuBonitaBusinessDataListInterface
+    ng2BonitaMasterList: Ng2BonitaMasterListInterface
     passedTest_BusinessData_queryBusinessData: boolean = false
 
     
@@ -48,7 +49,7 @@ export class BdmTestComponent implements OnInit {
     }
 
     private test_BusinessData_queryBusinessData() {
-        this.businessDataService.queryBusinessData<Ng2BonitaMasterInterface>(
+        this.businessDataService.queryBusinessData<Ng2BonitaMasterListInterface>(
             this.objectType,
             this.dataQueryParms,
             ZgwnuBonitaIsDateType)

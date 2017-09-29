@@ -29,10 +29,10 @@
   "author": "Onno Haldar",
   "license": "MIT",
   "dependencies": {
+    "@angular/core": "^4.4.3",
     "@angular/common": "^4.4.3",
     "@angular/compiler": "^4.4.3",
     "@angular/compiler-cli": "^4.4.3",
-    "@angular/core": "^4.4.3",
     "@angular/platform-browser": "^4.4.3",
     "@angular/platform-browser-dynamic": "^4.4.3",
     "core-js": "^2.5.1",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "typescript": "^2.5.3",
     "@types/node": "^8.0.31",
-    "@zgwnu/bonitacli": "git+https://github.com/onnohaldar/zgwnu-bonita-cli.git",
+
     "concurrently": "^3.5.0",
     "cpx": "^1.5.0",
     "lite-server": "^2.3.0",
@@ -53,6 +53,5 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-commonjs": "^8.2.1",
     "rollup-plugin-uglify":"^2.0.1"
-    
   }
 }

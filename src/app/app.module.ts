@@ -1,7 +1,7 @@
 import { NgModule }                 from '@angular/core'
 import { BrowserModule }            from '@angular/platform-browser'
 
-import { NgBonitaTestModule }  from '../ng-bonita-test'
+import { NgBonitaTestModule }  from './ng-bonita-test'
 
 import { AppComponent }  from './app.component'
 

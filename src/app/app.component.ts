@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   template: `<ng-bonita-test></ng-bonita-test>`,
 })
 export class AppComponent implements OnInit { 

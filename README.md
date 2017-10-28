@@ -11,7 +11,7 @@ Using @angular/cli with proxy redirection to Bonita Api (overcome cross-origin a
 * npm install  
 ## Bonita Workspace Install
 * Menu: _Diagram > Import >_
-* Choose _../test/ng-bonita/cfg/bonita/test_workspace.bos_
+* Choose _../test-ng-bonita/src/assets/bonita/test_workspace.bos_
 * Press on _Open_ button
 * Open a Diagram Import a Diagram
 Recently Modified

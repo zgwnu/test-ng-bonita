@@ -32,7 +32,10 @@ export class AuthenticationTestComponent implements OnInit {
     private authenticationService: ZgwnuBonitaAuthenticationService,  
     public testCaseService: TestCaseService,  
   )
-  {}
+  {
+    // use @angular/cli proxy for local bonita rest api redirection
+    this.configService.bonitaUrls.hostUrl = 'http://localhost:4200'
+  }
 
   ngOnInit() {
     this.test_AuthenticationService_login()

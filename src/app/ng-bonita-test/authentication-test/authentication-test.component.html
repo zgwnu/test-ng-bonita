@@ -9,14 +9,6 @@
 </div>
 
 <div *ngIf="passedTest_AuthenticationService_login">
-  <h3>&#9786; Response</h3>
-  <table style="text-align: left;">
-    <tr><th>status</th><th>= {{ response.status }}</th></tr>
-    <tr><th>statusText</th><th>= {{ response.statusText }}</th></tr>
-  </table>
-</div>
-
-<div *ngIf="passedTest_SessionService_getSession">
   <h3>&#9786; Session</h3>
   <table style="text-align: left;">
     <tr><th>user_id</th><th>= {{ session.user_id }}</th></tr>

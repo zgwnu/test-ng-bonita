@@ -21,7 +21,7 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14",
-    "@zgwnu/ng-bonita":"^1.0.4-beta-2"
+    "@zgwnu/ng-bonita": "^1.0.4-beta-2"
   },
   "devDependencies": {
     "@angular/cli": "1.4.9",

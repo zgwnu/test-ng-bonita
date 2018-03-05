@@ -7,14 +7,23 @@ describe('test-ng-bonita App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('APP Startup', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('ZGW NU Ng Bonita Test');
   });
 
-  it('should display session info', () => {
+  it('SERVER Authentication', () => {
     page.navigateTo();
-    expect(page.getAuthenticationSessionInfo()).toEqual('☺ Session');
+    expect(page.getAuthenticationTestText()).toEqual('☺ Session');
+  });
+
+  it('API BPM Process', () => {
+    page.navigateTo();
+    expect(page.getBpmProcessTestTextArray()).toEqual([ 
+      '☺ searchProcessDefinition', 
+      '☺ getProcessDefinition', 
+      '☺ createCase' 
+    ]);
   });
 
 });

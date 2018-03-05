@@ -9,7 +9,12 @@ export class AppPage {
     return element(by.css('app-root h1')).getText();
   }
 
-  getAuthenticationSessionInfo() {
+  getAuthenticationTestText() {
     return element(by.css('authentication-test div h3')).getText();
   }
+
+  getBpmProcessTestTextArray() {
+    return element.all(by.css('bpm-process-test div h3')).getText();
+  }
+
 }

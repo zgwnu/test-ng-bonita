@@ -17,4 +17,12 @@ export class AppPage {
     return element.all(by.css('bpm-process-test div h3')).getText();
   }
 
+  getBpmCaseTestTextArray() {
+    return element.all(by.css('bpm-case-test div h3')).getText();
+  }
+
+  getBpmActivityTestTextArray() {
+    return element.all(by.css('bpm-activity-test div h3')).getText();
+  }
+
 }

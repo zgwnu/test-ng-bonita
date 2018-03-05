@@ -26,4 +26,21 @@ describe('test-ng-bonita App', () => {
     ]);
   });
 
+  it('API BPM Case', () => {
+    page.navigateTo();
+    expect(page.getBpmCaseTestTextArray()).toEqual([ 
+      '☺ getCase', 
+      '☺ searchCase', 
+      '☺ getCaseContext' 
+    ]);
+  });
+
+  it('API BPM Activity', () => {
+    page.navigateTo();
+    expect(page.getBpmActivityTestTextArray()).toEqual([ 
+      '☺ searchActivities', 
+      '☺ getActivity'
+    ]);
+  });
+
 });
